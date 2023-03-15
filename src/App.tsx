@@ -10,6 +10,16 @@ function App() {
 
   const handeClick = () => {};
   setGame({ ...game, player: { name: "Bob" } });
+
+  const [pizza, setPizza] = useState({
+    name: "Spicy Pepperoni",
+    toppings: ["Mushroom"],
+  });
+
+  const handleClick = () => {
+    pizza.toppings.push("Cheese");
+  };
+
   return <div></div>;
 }
 
