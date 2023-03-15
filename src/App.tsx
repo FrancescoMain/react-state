@@ -17,7 +17,7 @@ function App() {
   });
 
   const handleClick = () => {
-    pizza.toppings.push("Cheese");
+    setPizza({ ...pizza, toppings: [...pizza.toppings, "Cheese"] });
   };
 
   return <div></div>;
